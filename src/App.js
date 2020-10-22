@@ -8,9 +8,10 @@ import botaoCarrinho from './imgs/carrinho.png'
 // Estilização
 
 const ImgCarrinho = styled.img`
+position: absolute;
 background-color: red;
 width: 50px;
-height: 50px;
+height: 40px;
 `
 class App extends React.Component {
 
