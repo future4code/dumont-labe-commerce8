@@ -2,16 +2,22 @@ import React from 'react';
 import './App.css';
 import styled from 'styled-components';
 import {Filter} from './components/Filter'
-import {Carrinho} from './components/carrinho'
-import botaoCarrinho from './imgs/carrinho.png'
+import {ShoppingCart} from './components/ShoppingCart/ShoppingCart'
+import imgCarrinho from './imgs/carrinho.png'
 
 // Estilização
 
-const ImgCarrinho = styled.img`
+const BotaoCarrinho = styled.button`
 position: absolute;
-background-color: red;
-width: 50px;
-height: 40px;
+width: 60px;
+height: 60px;
+border-radius: 30px;
+right: 200px;
+bottom: 100px;
+
+BotaoCarrinho:hover{
+    transform: scale(1.05);
+}
 `
 class App extends React.Component {
 
@@ -84,8 +90,8 @@ render(){
                     <a href="#" class="button">Adicionar ao Carrinho</a>
                 </div>
             </section>
-            <Carrinho/>
-            <ImgCarrinho src={botaoCarrinho} alt="Carrinho de compras"></ImgCarrinho>
+            <ShoppingCart/>
+            <BotaoCarrinho type="image" src="" alt="Submit" width="110" height="40"/>
         </main>
       
       </div>
