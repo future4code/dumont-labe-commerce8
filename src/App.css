@@ -1,5 +1,8 @@
 .App {
   text-align: center;
+  width: 100%; 
+  height: 100%;
+  position:relative
 }
 
 .App-logo {
@@ -35,4 +38,145 @@
   to {
     transform: rotate(360deg);
   }
+}
+/*-------------------------------------------------*/
+body {
+  width: 0%;
+  padding: 0;
+  margin: 0;
+}
+
+
+.tela-inteira {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background-color: white;
+  display: flex;
+}
+
+
+main {
+  min-height: 100%;
+  display: flex;
+}
+
+.menu-vertical { 
+  flex-basis: 340px;
+  border-right-style: solid;
+  border-right-width: thin;
+}
+
+.botoes-meunu-vertical {
+  list-style-type: none;
+}
+
+.painel-de-videos {
+  padding-left: 20px;
+  padding-top: 20px;
+  flex-grow: 1;
+  display: grid;
+  grid-template-columns: repeat(4, 23% 0.1%);
+  grid-template-rows: repeat(4, 320px 20px);
+  row-gap: 24px;
+  column-gap: 4px;
+
+}
+
+.media1 {
+  grid-column-start: 1;
+  grid-row-start: 1;
+}
+
+.media2 {
+  grid-column-start: 3;
+  grid-row-start: 1;
+}
+
+.media3 {
+  grid-column-start: 5;
+  grid-row-start: 1;
+}
+
+.media4 {
+  grid-column-start: 7;
+  grid-row-start: 1;
+}
+
+.media5 {
+  grid-column-start: 1;
+  grid-row-start: 3;
+}
+
+.media6 {
+  grid-column-start: 3;
+  grid-row-start: 3;
+}
+
+.media7 {
+  grid-column-start: 5;
+  grid-row-start: 3;
+}
+
+.media8 {
+  grid-column-start: 7;
+  grid-row-start: 3;
+}
+
+
+.box-pagina-principal {
+  display: flexbox;
+  grid-template-rows: 3fr 1fr;
+  grid-template-columns: 1fr;
+  border-style: dashed;
+  border-width: thin; 
+  border-color: darkorange;
+  height: 365px;
+  width: 220px;
+  padding: 5px;
+  margin-top: 2em;
+
+}
+
+
+.box-pagina-principal > img {
+  width: 100%;
+}
+
+p{
+  font-size: 18px;
+}
+
+.button {
+  background-color: black;
+  border: none;
+  color: white;
+  padding: 8px 36.8px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: rgb(255, 145, 0);
+  color: white;
+}
+
+.parte-de-cima{
+  position: absolute;
+  margin: 0em;
+  text-align: left;
+  display: flex;
+}
+
+.parte-preco{
+  position: absolute;
+  margin: 0em;
+  text-align: right;
+  display: flex;
 }
